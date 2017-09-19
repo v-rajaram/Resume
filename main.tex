@@ -1,0 +1,246 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{hyperref}
+\newcommand{\dollar}{\mbox{\textdollar}}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Varun}{Rajaram}{\href{mailto:varunrajaram@gmail.com}{varunrajaram@gmail.com} | 832.857.3031 | \href{mailto:vrajaram@cs.utexas.edu}{vrajaram@cs.utexas.edu}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Experienced with:}
+Java \textbullet{} Python  \\
+
+\location{Exposure to:}
+Matlab \textbullet{} R \textbullet{} 
+ Tensorflow \\ \textbullet{} OpenCV \textbullet{} Arduino \textbullet{} \LaTeX\ \\
+\vspace{\topsep} 
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+\location{Jerry R. Junkins Memorial \\ Scholarship Award}
+\vspace{1 mm}
+\underline{Recipient} of scholarship awarded by \\ \textbf{\href{https://goo.gl/Yi8edi}{Texas Instruments}} to  National \\ Merit Scholarship Finalists. \\
+\vspace{\topsep}
+\vspace{1 mm}
+\location{US State Department Scholarship}
+\vspace{1 mm}
+Awarded \underline{American Youth Leadership} \underline{Program} Scholarship for 5 week, all-expenses-paid study abroad and community service in Ecuador. Program selected 18 students in the Greater Houston Area. \\
+\vspace{\topsep} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Miscellaneous
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Misc. Projects}
+\underline{Handwritten Digit Recognition} in Python \\
+\vspace{3 mm}
+\begin{tightemize}
+\item Use of feed-forward neural network to classify handwritten digits. 
+\end{tightemize}
+\vspace{1 mm}
+\underline{Android Application} for high school volunteering with Android Studio
+\begin{tightemize}
+\item Built an application with integrated calendar and event creation mechanisms. 
+\end{tightemize}
+\vspace{1 mm}
+\underline{Image Manipulation} in Java \\
+\vspace{1 mm}
+\underline{Markov chains} for Text in Java \\
+\vspace{1 mm}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{2 mm}
+\section{Links} 
+\href{github.com/v-rajaram}{Github: github.com/v-rajaram} \\
+\vspace{1 mm}
+\href{linkedin.com/in/varun-rajaram}{LinkedIn: linkedin.com/in/varun-rajaram}
+%Github:// \href{https://github.com/v-rajaram}{\bf v-rajaram} \\
+%LinkedIn://  \href{https://www.linkedin.com/in/varun-rajaram}{\bf varun-rajaram} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Languages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{2 mm}
+\section{Languages}
+English, Spanish, Tamil \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+\vspace{2 mm}
+\runsubsection{University of Texas at Austin}
+\descript{| BS C.S.- Turing Scholars and Dean's Scholars Honors Programs  | BA Plan II Honors Program}
+\location{Aug 2017 - Present | Austin, TX}
+\vspace{\topsep} 
+\begin{tightemize}
+\item Relevant Coursework (H = Honors version of the class):
+Data Structures H, Discrete Math H, Vector Calculus H
+\end{tightemize}
+\vspace{4 mm}
+\runsubsection{William P. Clements High School}
+\descript{| Global Studies Academy} 
+\location{August 2013 - June 2017 | Sugar Land, TX}
+\begin{tightemize}
+\item Vice President of \underline{\href{https://www.fortbendisd.com/globalstudies}{Global Studies Academy}} Magnet Program
+\vspace{1 mm}
+\item 5 time Model United Nations 'Best Delegate'
+\vspace{1 mm}
+\item Relevant Coursework: AP Computer Science A, Computer Science 3 (Data Structures and Algorithms), Computer Science 4 (Independent Study), Multivariable Calculus.
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{2 mm}
+\section{Experience}
+\vspace{2 mm}
+
+\runsubsection{M.D. Anderson Cancer Center}
+\descript{| Research Intern }
+\location{June 2016 - August 2017 | Houston, TX}
+\begin{tightemize}
+\item Worked in Diagnostic Radiology applying \underline{deep learning} to cancer imaging, with a focus on MRI's and PET-CT Scans.
+\vspace{1 mm}
+\item Initial projects involved MRI flare detection and histopathology image analysis.
+\vspace{1 mm}
+\item Used OpenCV, Tensorflow, and Python for neural network applications.
+\vspace{1 mm}
+\item Pursued further research into Low-Grade Gliomas and signaling pathways, applying \underline{machine learning} to genomic sequencing, using Python and R.
+\end{tightemize}
+\sectionsep
+\vspace{2 mm}
+\runsubsection{Fort Settlement Middle School Coding Club}
+\descript{| Founder of Afterschool Club}
+\location{August 2015 – June 2016 | Sugar Land, TX}
+\begin{tightemize}
+\item Founded \underline{\href{https://goo.gl/KF7umR}{Coding Club}} for students at a local middle school, teaching fundamental computer science skills.
+\vspace{1 mm}
+\item Began teaching students to work with Scratch, and eventually progressed onto Java. Coding Club still exists today.
+\end{tightemize}
+\sectionsep
+\vspace{2 mm}
+\runsubsection{Global Issues Summit}
+\descript{| Co-Coordinator}
+\location{August 2016 – April 2017 | Sugar Land, TX}
+\begin{tightemize}
+\item Co-Coordinated an entirely student-run conference focusing on the United Nations Sustainable Development Goals.
+\vspace{1 mm}
+\item Conference had over 700 attendees from around the community.
+\vspace{1 mm}
+\item Extensive use of Microsoft Powerpoint, Excel, and Word (and Google Drive Equivalents).
+\vspace{1 mm}
+\item \url{globalissuessummit.org}
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Publications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+\vspace{2 mm}
+[1] Garg N, Elshikh M, Rayan J, Rajaram V and Bhosale P: \underline{\href{https://www.clinicsinoncology.com/pdfs_folder/cio-v1-id1088.pdf}{Differentiating Pancreatic Cystic Lesions}} \textit{Clinics in Oncology,} in press.
+
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
